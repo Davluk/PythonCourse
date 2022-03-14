@@ -4,11 +4,11 @@ from my_procedure import *
 class TestStringMethods(unittest.TestCase):
     
     def test_upper(self):
-        self.assertEqual('foo'.upper(), 'FOo')
+        self.assertEqual('Fo'.upper(), 'FO')
 
     def test_isupper(self):
         self.assertTrue('FOO'.isupper())
-        self.assertFalse('Foo'.isupper())
+        self.assertFalse('foo'.isupper())
 
     def test_split(self):
         s = 'hello world'
