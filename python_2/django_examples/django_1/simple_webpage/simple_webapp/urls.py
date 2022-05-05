@@ -1,8 +1,8 @@
-from django.conf.urls import url
+from django.urls import include, path  
 from simple_webapp import views
 
 urlpatterns=[
-    url("^$", views.Home.as_view() ),
-    url("^generic/$", views.Generic.as_view() ),
-    url("^elements/$", views.Elements.as_view() )
+    path("", views.Home.as_view() ),
+    path("generic/", views.Generic.as_view() ),
+    path("elements/", views.Elements.as_view() )
 ]
